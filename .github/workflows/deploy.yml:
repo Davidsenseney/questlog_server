@@ -19,6 +19,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_KEY }}
           port: ${{ secrets.SERVER_PORT }}
-          source: "questlog_server/server.js"
+          source: "server.js"
           target: "/home/david/questlog"
-          strip_components: 1
+          strip_components: 0
