@@ -19,9 +19,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_KEY }}
           port: ${{ secrets.SERVER_PORT }}
-          # The application file you want to update
           source: "questlog_server/server.js"
-          # Where it should land on the server
           target: "/home/david/questlog"
-          # Strips 'questlog_server/' so server.js lands flat in /home/david/questlog/
           strip_components: 1
